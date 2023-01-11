@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
 
-console.log("prova")
+console.log("Started!")
 
 var status = {
     timer: 0,
@@ -49,5 +49,5 @@ app.get('/data', function (req, res) {
     res.json(data);
 })
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`app listening on port ${port}`)
 })
