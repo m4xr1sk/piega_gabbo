@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+        <br>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="alert alert-primary" role="alert">
+                    <h1>Spaggiari S.r.l. - PIEGATRICE DELEM</h1>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row align-items-start">
+                <div class="col">
+                    PROGRAMMA DA ESEGUIRE:
+                </div>
+                <div class="col" id="programName">
+                    <i>nessuno</i>
+                </div>                
+            </div>
+            <div class="row align-items-start">
+                <div class="col">
+                    DATA RICEZIONE COMANDO:
+                </div>
+                <div class="col" id="commandTime">
+                    -
+                </div>                
+            </div>
+        </div>
+
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/moment/min/moment.min.js"></script>
+  </body>
+</html>
+<script>
+    (function() {
+        // your page initialization code here
+        // the DOM will be available here
+        var data_url = "http://localhost:3000/data"
+        setInterval(() => {
+            console.log("ok")
+            fetch(data_url)
+                .then(res => res.json())
+                .then(out => {
+                    console.log('Checkout this JSON! ', out)
+                    if (out.programName === "") {
+                        document.getElementById("programName").innerHTML = "<i>nessuno</i>"
+                        document.getElementById("commandTime").innerHTML = "-"
+                    } else {
+                        document.getElementById("programName").innerHTML = out.programName; 
+                        document.getElementById("commandTime").innerHTML = out.programTime
+                        document.getElementById("commandTime").innerHTML = moment.utc(out.programTime).format("DD/MM/YYYY HH:mm:ss")
+                    }
+                })
+                .catch(err => { throw err });
+        }, 500)
+    })();
+</script>
