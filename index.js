@@ -2,6 +2,7 @@ const express = require('express')
 var bodyParser = require('body-parser')
 const fs = require('fs')
 var moment = require('moment');
+const axios = require('axios');
 
 const app = express()
 const port = 3000
@@ -137,13 +138,19 @@ setInterval(() => {
     status.timer++
 }, 100)
 
+setInterval(() => {
+    axios.get('http://192.168.144.100/~Logs/SystemEventLog.txt').then(resp => {
+        console.log(resp.data);
+    });
+}, 2000)
+
 app.get('/hello', function (req, res) {
     res.send('Hello!');
 })
 app.get('/status', function (req, res) {
     res.json(status);
 })
-app.post('/program', function (req, res) {
+app.post('/program', function (req, res) { 
     console.log(req.body)
     status.programName = req.body.name
     status.programTime = Date.now()
