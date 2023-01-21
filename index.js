@@ -27,6 +27,8 @@ function isToday(date) {
 
 function process_sample_log(SystemEventLog) {
     
+    const _DEBUG_ = false
+
     var data = JSON.parse("[" + SystemEventLog + "]")
     data = data.filter(o => o.timems === undefined)
     data.map(o => {
@@ -42,8 +44,7 @@ function process_sample_log(SystemEventLog) {
     var data_last_load = data.filter(o => {
         return (o.event == 'load' && o.prod !== undefined)
     }).slice(-1)[0]
-    console.log("LOAD", data_last_load)
-
+    
     // cerco l'ultimo START
     var last_start = data.filter(o => {
         return (o.event == "start")       
@@ -53,25 +54,16 @@ function process_sample_log(SystemEventLog) {
     var data_last_stop = data.filter(o => {
         return (o.event == "stop" && o.time > last_start.time)
     }).slice(0, 1)
+
     // cerco il primo ERROR dopo START
     var data_last_error = data.filter(o => {
         return (o.event == "error" && o.time > last_start.time)
     }).slice(0, 1)
-    
-    console.log("------------------------------------------")
-    
-    console.log("START", last_start)
-    console.log("STOP", data_last_stop)
-    console.log("ERROR", data_last_error)
-    
-    console.log("------------------------------------------")
 
+    // conto il numero di partenze fatte oggi
     var data_today_starts = data.filter(o => {
         return (isToday(o.datetime) && o.event == "start")
     })
-    console.log("TODAY", data_today_starts)
-
-    console.log("------------------------------------------")
 
     var o = {
         counter: data_today_starts.length, // conto tutti gli stop che ci sono stati!
@@ -79,12 +71,18 @@ function process_sample_log(SystemEventLog) {
         running: 0,
         runTime: 0,
     }
-
+    
     if (data_last_error.length == 0 && data_last_stop.length == 0) {
         // dopo lo START non ci sono STOP e nemmeno ERROR
         var d = new Date()
         o.running = true
         o.runTime = (( d.getTime() - last_start.datetime ) / 31536000000).toFixed(0)
+    } else if (data_last_error.length == 0) {
+        o.running = false
+        o.runTime = (data_last_stop[0].time - last_start.time)/1000
+    } else if (data_last_stop.length == 0) {
+        o.running = false
+        o.runTime = (data_last_stop[0].time - last_start.time)/1000
     } else {
         o.running = false
         if (data_last_error[0].time < data_last_stop[0].time) {
@@ -93,8 +91,21 @@ function process_sample_log(SystemEventLog) {
             o.runTime = (data_last_stop[0].time - last_start.time)/1000
         }
     }
-    
-    console.log(o)
+        
+    if (_DEBUG_) {
+        console.log("------------------------------------------")    
+        console.log("LOAD", data_last_load)
+        console.log("------------------------------------------")    
+        console.log("START", last_start)
+        console.log("STOP", data_last_stop)
+        console.log("ERROR", data_last_error)    
+        console.log("------------------------------------------")
+        console.log("TODAY", data_today_starts)
+        console.log("------------------------------------------")
+        console.log(o)
+        console.log("------------------------------------------")
+    }
+
     //console.log(data.filter(o => {
     //    return o.time >= data_last_start.time
     //}).slice(-100))
@@ -117,17 +128,23 @@ function process_sample_log(SystemEventLog) {
 
 
 }
-
+ 
 //const demo_SystemEventLog = fs.readFileSync('./test/SystemEventLog.txt')
 //const demo_SystemEventLog = fs.readFileSync('./test/log2.txt')
 //process_sample_log(demo_SystemEventLog)
-axios.get('http://192.168.144.100/~Logs/SystemEventLog.txt').then(resp => {
-    //console.log(resp.data)
-    process_sample_log(resp.data)
-}).catch(error => {
-    console.log("get error")
-})
-return 
+
+// axios.get('http://192.168.144.100/~Logs/SystemEventLog.txt').then(resp => {
+//     //console.log(resp.data);
+//     try {
+//         var o = process_sample_log(resp.data)            
+//         console.log(o)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }).catch(error => {
+//     console.log("get error")
+// })
+// return
 
 //var oo = moment(1673544031107)
 //console.log(oo)
@@ -148,7 +165,17 @@ setInterval(() => {
 
 setInterval(() => {
     axios.get('http://192.168.144.100/~Logs/SystemEventLog.txt').then(resp => {
-        console.log(resp.data);
+        //console.log(resp.data);
+        try {
+            var o = process_sample_log(resp.data)            
+            console.log(o)
+            status.counter = o.counter
+            status.running = o.running
+            status.runTime = o.runTime
+            status.configFileName = o.configFileName
+        } catch (error) {
+            console.log(error)
+        }
     }).catch(error => {
         console.log("get error")
     })
