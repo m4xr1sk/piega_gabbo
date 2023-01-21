@@ -168,11 +168,12 @@ setInterval(() => {
         //console.log(resp.data);
         try {
             var o = process_sample_log(resp.data)            
-            console.log(o)
+            //console.log(o)
             status.counter = o.counter
             status.running = o.running
             status.runTime = o.runTime
             status.configFileName = o.configFileName
+            console.log(status)
         } catch (error) {
             console.log(error)
         }
