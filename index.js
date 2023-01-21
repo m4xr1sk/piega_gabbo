@@ -118,8 +118,16 @@ function process_sample_log(SystemEventLog) {
 
 }
 
-const demo_SystemEventLog = fs.readFileSync('./test/SystemEventLog.txt')
-process_sample_log(demo_SystemEventLog)
+//const demo_SystemEventLog = fs.readFileSync('./test/SystemEventLog.txt')
+//const demo_SystemEventLog = fs.readFileSync('./test/log2.txt')
+//process_sample_log(demo_SystemEventLog)
+axios.get('http://192.168.144.100/~Logs/SystemEventLog.txt').then(resp => {
+    //console.log(resp.data)
+    process_sample_log(resp.data)
+}).catch(error => {
+    console.log("get error")
+})
+return 
 
 //var oo = moment(1673544031107)
 //console.log(oo)
@@ -141,7 +149,9 @@ setInterval(() => {
 setInterval(() => {
     axios.get('http://192.168.144.100/~Logs/SystemEventLog.txt').then(resp => {
         console.log(resp.data);
-    });
+    }).catch(error => {
+        console.log("get error")
+    })
 }, 2000)
 
 app.get('/hello', function (req, res) {
