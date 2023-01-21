@@ -157,6 +157,9 @@ var status = {
     configFileName: "xxx",
     programName: "",
     programTime: 0,
+    numRequested: 0,
+    numCompleted: 0,
+    opState: 0,
 }
 
 setInterval(() => {
@@ -180,7 +183,7 @@ setInterval(() => {
     }).catch(error => {
         console.log("get error")
     })
-}, 2000)
+}, 10000)
 
 app.get('/hello', function (req, res) {
     res.send('Hello!');
@@ -190,8 +193,22 @@ app.get('/status', function (req, res) {
 })
 app.post('/program', function (req, res) { 
     console.log(req.body)
-    status.programName = req.body.name
     status.programTime = Date.now()
+    status.programName = req.body.name
+    status.numRequested = parseInt(req.body.num)
+    if (status.numRequested == 0 || status.programName == "") {
+        status.opState = 0
+    } else {
+        status.opState = 1        
+    }
+    res.json({
+        result: "ok",
+    });
+})
+app.get('/op/state/:value', function (req, res) { 
+    //console.log(req.body)
+    console.log(req.params)
+    status.opState = parseInt(req.params.value)
     res.json({
         result: "ok",
     });
@@ -201,6 +218,9 @@ app.get('/data', function (req, res) {
         timer: status.timer,
         programName: status.programName,
         programTime: status.programTime,
+        numRequested: status.numRequested,
+        numCompleted: status.numCompleted,
+        opState: status.opState,
     }
     res.json(data);
 })

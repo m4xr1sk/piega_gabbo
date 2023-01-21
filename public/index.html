@@ -14,23 +14,12 @@
                     <h1>Spaggiari S.r.l. - PIEGATRICE DELEM</h1>
                 </div>
             </div>
+            
             <div class="row">
                 <br>
                 <br>
             </div>
-            <div class="row align-items-start">
-                <div class="col">
-                    <h3>
-                        PROGRAMMA DA ESEGUIRE:
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3><strong id="programName"><i>nessuno</i></strong></h3>
-                </div>                
-            </div>
-            <div class="row">
-                <br>
-            </div>
+            
             <div class="row align-items-start">
                 <div class="col">
                     <h3>
@@ -41,6 +30,74 @@
                     <h3><strong id="commandTime">-</strong></h3>
                 </div>                
             </div>
+
+            <div class="row">
+                <br>
+            </div>
+
+            <div class="row align-items-start">
+                <div class="col">
+                    <h3>
+                        PROGRAMMA DA ESEGUIRE:
+                    </h3>
+                </div>
+                <div class="col">
+                    <h3><strong id="programName"><i>nessuno</i></strong></h3>
+                </div>                
+            </div>
+                        
+            <div class="row">
+                <br>
+            </div>
+
+            <div class="row align-items-start">
+                <div class="col">
+                    <h3>
+                        QUANTITA' RICHIESTA:
+                    </h3>
+                </div>
+                <div class="col">
+                    <h3><strong id="numRequested">0</strong></h3>
+                </div>                
+            </div>
+                        
+            <div class="row">
+                <br>
+            </div>
+            
+            <div class="row align-items-start" style="display: none">
+                <div class="col">
+                    <h3>
+                        QUANTITA' COMPLETATA:
+                    </h3>
+                </div>
+                <div class="col">
+                    <h3><strong id="numCompleted">0</strong></h3>
+                </div>                
+            </div>
+            
+            <div class="row">
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div class="row">
+                <div class="col" id="exec_msg">                    
+                </div>
+            </div>
+
+            <div class="row align-items-start">
+                <div class="col">
+                    <button onClick="sendOpState(3)" id="button_accept" type="button" class="btn btn-primary btn-lg input-block-level form-control">ACCETTA</button>
+                    <button onClick="sendOpState(5)" id="button_completed" type="button" class="btn btn-success btn-lg input-block-level form-control">COMPLETATA</button>
+                </div>                
+                <div class="col">
+                    <button onClick="sendOpState(2)" id="button_reject" type="button" class="btn btn-warning btn-lg input-block-level form-control">RIFIUTA</button>
+                    <button onClick="sendOpState(4)" id="button_cancel" type="button" class="btn btn-danger btn-lg input-block-level form-control">ANNULLA</button>
+                </div>                
+            </div>
         </div>
 
     <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -48,24 +105,96 @@
   </body>
 </html>
 <script>
+    function sendOpState(value) {
+        if (!confirm("Sei sicuro?")) {
+            return
+        } else {
+            console.log("ok")
+            fetch("http://localhost:3000/op/state/" + value).then(res => {
+                console.log(res)
+            })                
+        }
+    }
+
     (function() {
         // your page initialization code here
         // the DOM will be available here
+
+        //document.getElementById("buttons_message").innerHTML = ""
+        document.getElementById("button_accept").style.display = "none";
+        document.getElementById("button_completed").style.display = "none";
+        document.getElementById("button_reject").style.display = "none";
+        document.getElementById("button_cancel").style.display = "none";
+
         var data_url = "http://localhost:3000/data"
         setInterval(() => {
-            console.log("ok")
+            //console.log("ok")
             fetch(data_url)
                 .then(res => res.json())
                 .then(out => {
-                    console.log('Checkout this JSON! ', out)
+                    //console.log('Checkout this JSON! ', out)
                     if (out.programName === "") {
-                        document.getElementById("programName").innerHTML = "<i>nessuno</i>"
                         document.getElementById("commandTime").innerHTML = "-"
+                        document.getElementById("programName").innerHTML = "<i>nessuno</i>"
+                        document.getElementById("numRequested").innerHTML = "0"
+                        document.getElementById("numCompleted").innerHTML = "0"
                     } else {
-                        document.getElementById("programName").innerHTML = out.programName; 
-                        document.getElementById("commandTime").innerHTML = out.programTime
                         document.getElementById("commandTime").innerHTML = moment.utc(out.programTime).format("DD/MM/YYYY HH:mm:ss")
+                        document.getElementById("programName").innerHTML = out.programName
+                        document.getElementById("numRequested").innerHTML = out.numRequested
+                        document.getElementById("numCompleted").innerHTML = out.numCompleted
                     }
+                    switch (out.opState) {
+                        case 0:
+                            // no info
+                            document.getElementById("exec_msg").innerHTML = ""
+                            document.getElementById("button_accept").style.display = "none";
+                            document.getElementById("button_completed").style.display = "none";
+                            document.getElementById("button_reject").style.display = "none";
+                            document.getElementById("button_cancel").style.display = "none";
+                            break;
+                        case 1:
+                            // confermare
+                            document.getElementById("exec_msg").innerHTML = "<div class='alert alert-light'><h3>RICHIESTA CONFERMA</h3></div>"
+                            document.getElementById("button_accept").style.display = "inline";
+                            document.getElementById("button_completed").style.display = "none";
+                            document.getElementById("button_reject").style.display = "inline";
+                            document.getElementById("button_cancel").style.display = "none";
+                            break;
+                        case 2:
+                            // rifiutata
+                            document.getElementById("exec_msg").innerHTML = "<div class='alert alert-warning'><h3>RICHIESTA RIFIUTATA</h3></div>"
+                            document.getElementById("button_accept").style.display = "none";
+                            document.getElementById("button_completed").style.display = "none";
+                            document.getElementById("button_reject").style.display = "none";
+                            document.getElementById("button_cancel").style.display = "none";
+                            break;
+                        case 3:
+                            // in esecuzione
+                            document.getElementById("exec_msg").innerHTML = "<div class='alert alert-info'><h3>ESECUZIONE IN CORSO...</h3></div>"
+                            document.getElementById("button_accept").style.display = "none";
+                            document.getElementById("button_completed").style.display = "inline";
+                            document.getElementById("button_reject").style.display = "none";
+                            document.getElementById("button_cancel").style.display = "inline";
+                            break;
+                        case 4:
+                            // annullata
+                            document.getElementById("exec_msg").innerHTML = "<div class='alert alert-danger'><h3>ESECUZIONE ANNULLATA</h3></div>"
+                            document.getElementById("button_accept").style.display = "none";
+                            document.getElementById("button_completed").style.display = "none";
+                            document.getElementById("button_reject").style.display = "none";
+                            document.getElementById("button_cancel").style.display = "none";
+                            break;
+                        case 5:
+                            // completata
+                            document.getElementById("exec_msg").innerHTML = "<div class='alert alert-success'><h3>ESECUZIONE COMPLETATA</h3></div>"
+                            document.getElementById("button_accept").style.display = "none";
+                            document.getElementById("button_completed").style.display = "none";
+                            document.getElementById("button_reject").style.display = "none";
+                            document.getElementById("button_cancel").style.display = "none";
+                            break;
+                    }
+
                 })
                 .catch(err => { throw err });
         }, 500)
