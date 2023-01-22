@@ -1,0 +1,1663 @@
+[
+  {
+    "time": "1673258740267",
+    "event": "load",
+    "datetime": "2023-01-09T10:05:40.267Z"
+  },
+  {
+    "time": "1673258855191",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:07:35.191Z"
+  },
+  {
+    "time": "1673258870869",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T10:07:50.869Z"
+  },
+  {
+    "time": "1673258870907",
+    "event": "load",
+    "prod": "TETTOIA",
+    "datetime": "2023-01-09T10:07:50.907Z"
+  },
+  {
+    "time": "1673258873090",
+    "event": "error",
+    "error": "D0089",
+    "datetime": "2023-01-09T10:07:53.090Z"
+  },
+  {
+    "time": "1673259500318",
+    "event": "start",
+    "prod": "TETTOIA",
+    "datetime": "2023-01-09T10:18:20.318Z"
+  },
+  {
+    "time": "1673259532808",
+    "event": "stop",
+    "prod": "TETTOIA",
+    "datetime": "2023-01-09T10:18:52.808Z"
+  },
+  {
+    "time": "1673259532894",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:18:52.894Z"
+  },
+  {
+    "time": "1673259679724",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:21:19.724Z"
+  },
+  {
+    "time": "1673259685368",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T10:21:25.368Z"
+  },
+  {
+    "time": "1673259687190",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:21:27.190Z"
+  },
+  {
+    "time": "1673259688019",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:21:28.019Z"
+  },
+  {
+    "time": "1673259692595",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:21:32.595Z"
+  },
+  {
+    "time": "1673259693358",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:21:33.358Z"
+  },
+  {
+    "time": "1673259699554",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:21:39.554Z"
+  },
+  {
+    "time": "1673259741791",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:22:21.791Z"
+  },
+  {
+    "time": "1673259744145",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:22:24.145Z"
+  },
+  {
+    "time": "1673259745310",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:22:25.310Z"
+  },
+  {
+    "time": "1673259748918",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:22:28.918Z"
+  },
+  {
+    "time": "1673259750077",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:22:30.077Z"
+  },
+  {
+    "time": "1673259765245",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:22:45.245Z"
+  },
+  {
+    "time": "1673260031929",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:27:11.929Z"
+  },
+  {
+    "time": "1673260052605",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:27:32.605Z"
+  },
+  {
+    "time": "1673260436835",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:33:56.835Z"
+  },
+  {
+    "time": "1673260438440",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:33:58.440Z"
+  },
+  {
+    "time": "1673260446891",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:34:06.891Z"
+  },
+  {
+    "time": "1673260446992",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:34:06.992Z"
+  },
+  {
+    "time": "1673260451081",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T10:34:11.081Z"
+  },
+  {
+    "time": "1673260451118",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:34:11.118Z"
+  },
+  {
+    "time": "1673260452646",
+    "event": "start",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:34:12.646Z"
+  },
+  {
+    "time": "1673260459493",
+    "event": "stop",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:34:19.493Z"
+  },
+  {
+    "time": "1673260459670",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:34:19.670Z"
+  },
+  {
+    "time": "1673260459757",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:34:19.757Z"
+  },
+  {
+    "time": "1673260479207",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T10:34:39.207Z"
+  },
+  {
+    "time": "1673260479246",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:34:39.246Z"
+  },
+  {
+    "time": "1673260480699",
+    "event": "start",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:34:40.699Z"
+  },
+  {
+    "time": "1673260520280",
+    "event": "step",
+    "prod": "MENSOLA CALANDRA",
+    "method": "0",
+    "datetime": "2023-01-09T10:35:20.280Z"
+  },
+  {
+    "time": "1673260556192",
+    "event": "stop",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:35:56.192Z"
+  },
+  {
+    "time": "1673260556270",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:35:56.270Z"
+  },
+  {
+    "time": "1673260566128",
+    "event": "error",
+    "error": "U9999",
+    "datetime": "2023-01-09T10:36:06.128Z"
+  },
+  {
+    "time": "1673260587362",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:36:27.362Z"
+  },
+  {
+    "time": "1673260606036",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:36:46.036Z"
+  },
+  {
+    "time": "1673260606126",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:36:46.126Z"
+  },
+  {
+    "time": "1673260638706",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:37:18.706Z"
+  },
+  {
+    "time": "1673260641847",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:37:21.847Z"
+  },
+  {
+    "time": "1673260658998",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T10:37:38.998Z"
+  },
+  {
+    "time": "1673260659199",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T10:37:39.199Z"
+  },
+  {
+    "time": "1673260660012",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:37:40.012Z"
+  },
+  {
+    "time": "1673260666049",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:37:46.049Z"
+  },
+  {
+    "time": "1673260666150",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:37:46.150Z"
+  },
+  {
+    "time": "1673260687536",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T10:38:07.536Z"
+  },
+  {
+    "time": "1673260687590",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:38:07.590Z"
+  },
+  {
+    "time": "1673260701123",
+    "event": "start",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:38:21.123Z"
+  },
+  {
+    "time": "1673260728614",
+    "event": "stop",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:38:48.614Z"
+  },
+  {
+    "time": "1673260728777",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:38:48.777Z"
+  },
+  {
+    "time": "1673260728865",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:38:48.865Z"
+  },
+  {
+    "time": "1673260742213",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:39:02.213Z"
+  },
+  {
+    "time": "1673260742292",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:39:02.292Z"
+  },
+  {
+    "time": "1673260746677",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:39:06.677Z"
+  },
+  {
+    "time": "1673260755450",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:39:15.450Z"
+  },
+  {
+    "time": "1673260757316",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T10:39:17.316Z"
+  },
+  {
+    "time": "1673260757355",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:39:17.355Z"
+  },
+  {
+    "time": "1673260761456",
+    "event": "start",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:39:21.456Z"
+  },
+  {
+    "time": "1673260783087",
+    "event": "stop",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:39:43.087Z"
+  },
+  {
+    "time": "1673260783266",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:39:43.266Z"
+  },
+  {
+    "time": "1673260783354",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:39:43.354Z"
+  },
+  {
+    "time": "1673260789672",
+    "event": "error",
+    "error": "D6706",
+    "datetime": "2023-01-09T10:39:49.672Z"
+  },
+  {
+    "time": "1673260795740",
+    "event": "error",
+    "error": "D6706",
+    "datetime": "2023-01-09T10:39:55.740Z"
+  },
+  {
+    "time": "1673260801953",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:40:01.953Z"
+  },
+  {
+    "time": "1673260801982",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:40:01.982Z"
+  },
+  {
+    "time": "1673260810905",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:40:10.905Z"
+  },
+  {
+    "time": "1673260810990",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:40:10.990Z"
+  },
+  {
+    "time": "1673260816362",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:40:16.362Z"
+  },
+  {
+    "time": "1673260818414",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:40:18.414Z"
+  },
+  {
+    "time": "1673260822268",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:40:22.268Z"
+  },
+  {
+    "time": "1673260833138",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:40:33.138Z"
+  },
+  {
+    "time": "1673260834692",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T10:40:34.692Z"
+  },
+  {
+    "time": "1673260835602",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:40:35.602Z"
+  },
+  {
+    "time": "1673260837580",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:40:37.580Z"
+  },
+  {
+    "time": "1673260837668",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:40:37.668Z"
+  },
+  {
+    "time": "1673260842946",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T10:40:42.946Z"
+  },
+  {
+    "time": "1673260842984",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:40:42.984Z"
+  },
+  {
+    "time": "1673260849939",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:40:49.939Z"
+  },
+  {
+    "time": "1673260850025",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:40:50.025Z"
+  },
+  {
+    "time": "1673260854046",
+    "event": "error",
+    "error": "D6706",
+    "datetime": "2023-01-09T10:40:54.046Z"
+  },
+  {
+    "time": "1673260869243",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:41:09.243Z"
+  },
+  {
+    "time": "1673260906589",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:41:46.589Z"
+  },
+  {
+    "time": "1673260908562",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:41:48.562Z"
+  },
+  {
+    "time": "1673260909858",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T10:41:49.858Z"
+  },
+  {
+    "time": "1673260916269",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T10:41:56.269Z"
+  },
+  {
+    "time": "1673260916320",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:41:56.320Z"
+  },
+  {
+    "time": "1673260919761",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:41:59.761Z"
+  },
+  {
+    "time": "1673260919823",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:41:59.823Z"
+  },
+  {
+    "time": "1673260923238",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:42:03.238Z"
+  },
+  {
+    "time": "1673260935837",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:42:15.837Z"
+  },
+  {
+    "time": "1673260939878",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:42:19.878Z"
+  },
+  {
+    "time": "1673260945681",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:42:25.681Z"
+  },
+  {
+    "time": "1673260947042",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:42:27.042Z"
+  },
+  {
+    "time": "1673260947102",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:42:27.102Z"
+  },
+  {
+    "time": "1673260949087",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:42:29.087Z"
+  },
+  {
+    "time": "1673260959999",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:42:39.999Z"
+  },
+  {
+    "time": "1673260961089",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:42:41.089Z"
+  },
+  {
+    "time": "1673260961149",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:42:41.149Z"
+  },
+  {
+    "time": "1673260963535",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:42:43.535Z"
+  },
+  {
+    "time": "1673260969875",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:42:49.875Z"
+  },
+  {
+    "time": "1673260971201",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:42:51.201Z"
+  },
+  {
+    "time": "1673260971263",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:42:51.263Z"
+  },
+  {
+    "time": "1673260974052",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:42:54.052Z"
+  },
+  {
+    "time": "1673260980753",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:43:00.753Z"
+  },
+  {
+    "time": "1673260981501",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:43:01.501Z"
+  },
+  {
+    "time": "1673260981561",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:43:01.561Z"
+  },
+  {
+    "time": "1673260984443",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:43:04.443Z"
+  },
+  {
+    "time": "1673260989337",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:43:09.337Z"
+  },
+  {
+    "time": "1673260990536",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:43:10.536Z"
+  },
+  {
+    "time": "1673260990597",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T10:43:10.597Z"
+  },
+  {
+    "time": "1673260996972",
+    "event": "error",
+    "error": "D6706",
+    "datetime": "2023-01-09T10:43:16.972Z"
+  },
+  {
+    "time": "1673261007314",
+    "event": "error",
+    "error": "D6706",
+    "datetime": "2023-01-09T10:43:27.314Z"
+  },
+  {
+    "time": "1673261020847",
+    "event": "error",
+    "error": "D6706",
+    "datetime": "2023-01-09T10:43:40.847Z"
+  },
+  {
+    "time": "1673261025122",
+    "event": "error",
+    "error": "D6706",
+    "datetime": "2023-01-09T10:43:45.122Z"
+  },
+  {
+    "time": "1673261045716",
+    "event": "mode",
+    "mode": "1",
+    "datetime": "2023-01-09T10:44:05.716Z"
+  },
+  {
+    "time": "1673261045903",
+    "event": "load",
+    "datetime": "2023-01-09T10:44:05.903Z"
+  },
+  {
+    "time": "1673261175380",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T10:46:15.380Z"
+  },
+  {
+    "time": "1673261175419",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:46:15.419Z"
+  },
+  {
+    "time": "1673261176476",
+    "event": "mode",
+    "mode": "1",
+    "datetime": "2023-01-09T10:46:16.476Z"
+  },
+  {
+    "time": "1673261176647",
+    "event": "load",
+    "datetime": "2023-01-09T10:46:16.647Z"
+  },
+  {
+    "time": "1673261635906",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T10:53:55.906Z"
+  },
+  {
+    "time": "1673261639384",
+    "event": "mode",
+    "mode": "1",
+    "datetime": "2023-01-09T10:53:59.384Z"
+  },
+  {
+    "time": "1673261639575",
+    "event": "load",
+    "datetime": "2023-01-09T10:53:59.575Z"
+  },
+  {
+    "time": "1673261641868",
+    "event": "start",
+    "datetime": "2023-01-09T10:54:01.868Z"
+  },
+  {
+    "time": "1673261671925",
+    "event": "step",
+    "method": "0",
+    "datetime": "2023-01-09T10:54:31.925Z"
+  },
+  {
+    "time": "1673261671925",
+    "event": "prod_rdy",
+    "datetime": "2023-01-09T10:54:31.925Z"
+  },
+  {
+    "time": "1673261852796",
+    "event": "stop",
+    "datetime": "2023-01-09T10:57:32.796Z"
+  },
+  {
+    "time": "1673261856688",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T10:57:36.688Z"
+  },
+  {
+    "time": "1673261856727",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T10:57:36.727Z"
+  },
+  {
+    "time": "1673290757949",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T18:59:17.949Z"
+  },
+  {
+    "time": "1673290775545",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T18:59:35.545Z"
+  },
+  {
+    "time": "1673290775878",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T18:59:35.878Z"
+  },
+  {
+    "time": "1673290792589",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T18:59:52.589Z"
+  },
+  {
+    "time": "1673290808416",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T19:00:08.416Z"
+  },
+  {
+    "time": "1673290808618",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T19:00:08.618Z"
+  },
+  {
+    "time": "1673290809137",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:00:09.137Z"
+  },
+  {
+    "time": "1673290809339",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:00:09.339Z"
+  },
+  {
+    "time": "1673290809440",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:00:09.440Z"
+  },
+  {
+    "time": "1673291482174",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:11:22.174Z"
+  },
+  {
+    "time": "1673291482241",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T19:11:22.241Z"
+  },
+  {
+    "time": "1673291483725",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:11:23.725Z"
+  },
+  {
+    "time": "1673291492466",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T19:11:32.466Z"
+  },
+  {
+    "time": "1673291493275",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:11:33.275Z"
+  },
+  {
+    "time": "1673291550179",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T19:12:30.179Z"
+  },
+  {
+    "time": "1673291550381",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T19:12:30.381Z"
+  },
+  {
+    "time": "1673291551022",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:12:31.022Z"
+  },
+  {
+    "time": "1673291551123",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:12:31.123Z"
+  },
+  {
+    "time": "1673291552607",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:12:32.607Z"
+  },
+  {
+    "time": "1673291555524",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:12:35.524Z"
+  },
+  {
+    "time": "1673291559956",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:12:39.956Z"
+  },
+  {
+    "time": "1673291560035",
+    "event": "load",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:12:40.035Z"
+  },
+  {
+    "time": "1673291561330",
+    "event": "error",
+    "error": "D0089",
+    "datetime": "2023-01-09T19:12:41.330Z"
+  },
+  {
+    "time": "1673291568150",
+    "event": "start",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:12:48.150Z"
+  },
+  {
+    "time": "1673291593307",
+    "event": "stop",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:13:13.307Z"
+  },
+  {
+    "time": "1673291593436",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:13:13.436Z"
+  },
+  {
+    "time": "1673291595823",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:13:15.823Z"
+  },
+  {
+    "time": "1673291596259",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:13:16.259Z"
+  },
+  {
+    "time": "1673291596297",
+    "event": "load",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:13:16.297Z"
+  },
+  {
+    "time": "1673291597708",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:13:17.708Z"
+  },
+  {
+    "time": "1673291769764",
+    "event": "mode",
+    "mode": "1",
+    "datetime": "2023-01-09T19:16:09.764Z"
+  },
+  {
+    "time": "1673291769986",
+    "event": "load",
+    "datetime": "2023-01-09T19:16:09.986Z"
+  },
+  {
+    "time": "1673291776759",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:16:16.759Z"
+  },
+  {
+    "time": "1673291778048",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:16:18.048Z"
+  },
+  {
+    "time": "1673292208154",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:23:28.154Z"
+  },
+  {
+    "time": "1673292208235",
+    "event": "load",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:23:28.235Z"
+  },
+  {
+    "time": "1673292210739",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:23:30.739Z"
+  },
+  {
+    "time": "1673292222502",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:23:42.502Z"
+  },
+  {
+    "time": "1673292222540",
+    "event": "load",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:23:42.540Z"
+  },
+  {
+    "time": "1673292227426",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:23:47.426Z"
+  },
+  {
+    "time": "1673292253225",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:24:13.225Z"
+  },
+  {
+    "time": "1673292253263",
+    "event": "load",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:24:13.263Z"
+  },
+  {
+    "time": "1673292253861",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:24:13.861Z"
+  },
+  {
+    "time": "1673292294554",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:24:54.554Z"
+  },
+  {
+    "time": "1673292298589",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:24:58.589Z"
+  },
+  {
+    "time": "1673292298655",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T19:24:58.655Z"
+  },
+  {
+    "time": "1673292301515",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:25:01.515Z"
+  },
+  {
+    "time": "1673292301614",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T19:25:01.614Z"
+  },
+  {
+    "time": "1673292302959",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T19:25:02.959Z"
+  },
+  {
+    "time": "1673292303663",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:25:03.663Z"
+  },
+  {
+    "time": "1673292304551",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:25:04.551Z"
+  },
+  {
+    "time": "1673292304589",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T19:25:04.589Z"
+  },
+  {
+    "time": "1673292306591",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:25:06.591Z"
+  },
+  {
+    "time": "1673292306650",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T19:25:06.650Z"
+  },
+  {
+    "time": "1673292319089",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:25:19.089Z"
+  },
+  {
+    "time": "1673292319127",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T19:25:19.127Z"
+  },
+  {
+    "time": "1673292320982",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:25:20.982Z"
+  },
+  {
+    "time": "1673292321041",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T19:25:21.041Z"
+  },
+  {
+    "time": "1673292321322",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:25:21.322Z"
+  },
+  {
+    "time": "1673292321361",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T19:25:21.361Z"
+  },
+  {
+    "time": "1673292331051",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:25:31.051Z"
+  },
+  {
+    "time": "1673292334505",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T19:25:34.505Z"
+  },
+  {
+    "time": "1673292340667",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T19:25:40.667Z"
+  },
+  {
+    "time": "1673292341484",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:25:41.484Z"
+  },
+  {
+    "time": "1673292342429",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T19:25:42.429Z"
+  },
+  {
+    "time": "1673292342949",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:25:42.949Z"
+  },
+  {
+    "time": "1673292344204",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:25:44.204Z"
+  },
+  {
+    "time": "1673292344242",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T19:25:44.242Z"
+  },
+  {
+    "time": "1673292346070",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:25:46.070Z"
+  },
+  {
+    "time": "1673292346127",
+    "event": "error",
+    "error": "D0633",
+    "datetime": "2023-01-09T19:25:46.127Z"
+  },
+  {
+    "time": "1673292350683",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:25:50.683Z"
+  },
+  {
+    "time": "1673292350721",
+    "event": "load",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T19:25:50.721Z"
+  },
+  {
+    "time": "1673292352342",
+    "event": "error",
+    "error": "D0089",
+    "datetime": "2023-01-09T19:25:52.342Z"
+  },
+  {
+    "time": "1673292367124",
+    "event": "start",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T19:26:07.124Z"
+  },
+  {
+    "time": "1673292396011",
+    "event": "stop",
+    "prod": "MENSOLA CALANDRA",
+    "datetime": "2023-01-09T19:26:36.011Z"
+  },
+  {
+    "time": "1673292396093",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:26:36.093Z"
+  },
+  {
+    "time": "1673292408437",
+    "event": "error",
+    "error": "D1243",
+    "datetime": "2023-01-09T19:26:48.437Z"
+  },
+  {
+    "time": "1673292409548",
+    "event": "error",
+    "error": "D1241",
+    "datetime": "2023-01-09T19:26:49.548Z"
+  },
+  {
+    "time": "1673292412454",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:26:52.454Z"
+  },
+  {
+    "time": "1673292414876",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:26:54.876Z"
+  },
+  {
+    "time": "1673292414915",
+    "event": "load",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:26:54.915Z"
+  },
+  {
+    "time": "1673292416930",
+    "event": "start",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:26:56.930Z"
+  },
+  {
+    "time": "1673292435001",
+    "event": "stop",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:27:15.001Z"
+  },
+  {
+    "time": "1673292435093",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:27:15.093Z"
+  },
+  {
+    "time": "1673292449072",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:27:29.072Z"
+  },
+  {
+    "time": "1673292450625",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:27:30.625Z"
+  },
+  {
+    "time": "1673292450664",
+    "event": "load",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:27:30.664Z"
+  },
+  {
+    "time": "1673292456755",
+    "event": "mode",
+    "mode": "1",
+    "datetime": "2023-01-09T19:27:36.755Z"
+  },
+  {
+    "time": "1673292456971",
+    "event": "load",
+    "datetime": "2023-01-09T19:27:36.971Z"
+  },
+  {
+    "time": "1673292458940",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:27:38.940Z"
+  },
+  {
+    "time": "1673292458979",
+    "event": "load",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:27:38.979Z"
+  },
+  {
+    "time": "1673292568761",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:29:28.761Z"
+  },
+  {
+    "time": "1673292593836",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:29:53.836Z"
+  },
+  {
+    "time": "1673292593891",
+    "event": "load",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:29:53.891Z"
+  },
+  {
+    "time": "1673292596312",
+    "event": "start",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:29:56.312Z"
+  },
+  {
+    "time": "1673292617861",
+    "event": "stop",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:30:17.861Z"
+  },
+  {
+    "time": "1673292617954",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:30:17.954Z"
+  },
+  {
+    "time": "1673292624425",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:30:24.425Z"
+  },
+  {
+    "time": "1673292624462",
+    "event": "load",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:30:24.462Z"
+  },
+  {
+    "time": "1673292625890",
+    "event": "start",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:30:25.890Z"
+  },
+  {
+    "time": "1673292643947",
+    "event": "step",
+    "prod": "PIASTRE TETTOIA",
+    "method": "0",
+    "datetime": "2023-01-09T19:30:43.947Z"
+  },
+  {
+    "time": "1673292643947",
+    "event": "prod_rdy",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:30:43.947Z"
+  },
+  {
+    "time": "1673292652710",
+    "event": "stop",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:30:52.710Z"
+  },
+  {
+    "time": "1673292652885",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:30:52.885Z"
+  },
+  {
+    "time": "1673292670000",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:31:10.000Z"
+  },
+  {
+    "time": "1673292670040",
+    "event": "load",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:31:10.040Z"
+  },
+  {
+    "time": "1673292671142",
+    "event": "start",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:31:11.142Z"
+  },
+  {
+    "time": "1673292697254",
+    "event": "step",
+    "prod": "PIASTRE TETTOIA",
+    "method": "3",
+    "datetime": "2023-01-09T19:31:37.254Z"
+  },
+  {
+    "time": "1673292697254",
+    "event": "prod_rdy",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:31:37.254Z"
+  },
+  {
+    "time": "1673292818133",
+    "event": "error",
+    "error": "U9999",
+    "datetime": "2023-01-09T19:33:38.133Z"
+  },
+  {
+    "time": "1673292851419",
+    "event": "stop",
+    "prod": "PIASTRE TETTOIA",
+    "datetime": "2023-01-09T19:34:11.419Z"
+  },
+  {
+    "time": "1673292851519",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:34:11.519Z"
+  },
+  {
+    "time": "1673293000473",
+    "event": "error",
+    "error": "D4742",
+    "datetime": "2023-01-09T19:36:40.473Z"
+  },
+  {
+    "time": "1673293085207",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:38:05.207Z"
+  },
+  {
+    "time": "1673293085245",
+    "event": "load",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:38:05.245Z"
+  },
+  {
+    "time": "1673293092933",
+    "event": "start",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:38:12.933Z"
+  },
+  {
+    "time": "1673293099918",
+    "event": "stop",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:38:19.918Z"
+  },
+  {
+    "time": "1673293100033",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:38:20.033Z"
+  },
+  {
+    "time": "1673293109225",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:38:29.225Z"
+  },
+  {
+    "time": "1673293111430",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:38:31.430Z"
+  },
+  {
+    "time": "1673293113388",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:38:33.388Z"
+  },
+  {
+    "time": "1673293115671",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:38:35.671Z"
+  },
+  {
+    "time": "1673293115710",
+    "event": "load",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:38:35.710Z"
+  },
+  {
+    "time": "1673293116695",
+    "event": "start",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:38:36.695Z"
+  },
+  {
+    "time": "1673293123979",
+    "event": "stop",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:38:43.979Z"
+  },
+  {
+    "time": "1673293124077",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:38:44.077Z"
+  },
+  {
+    "time": "1673293140442",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:39:00.442Z"
+  },
+  {
+    "time": "1673293144530",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:39:04.530Z"
+  },
+  {
+    "time": "1673293144568",
+    "event": "load",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:39:04.568Z"
+  },
+  {
+    "time": "1673293146675",
+    "event": "start",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:39:06.675Z"
+  },
+  {
+    "time": "1673293196297",
+    "event": "stop",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:39:56.297Z"
+  },
+  {
+    "time": "1673293199106",
+    "event": "mode",
+    "mode": "1",
+    "datetime": "2023-01-09T19:39:59.106Z"
+  },
+  {
+    "time": "1673293199284",
+    "event": "load",
+    "datetime": "2023-01-09T19:39:59.284Z"
+  },
+  {
+    "time": "1673293202622",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:40:02.622Z"
+  },
+  {
+    "time": "1673293202661",
+    "event": "load",
+    "prod": "6007470402M-00",
+    "datetime": "2023-01-09T19:40:02.661Z"
+  },
+  {
+    "time": "1673293203842",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:40:03.842Z"
+  },
+  {
+    "time": "1673293207893",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:40:07.893Z"
+  },
+  {
+    "time": "1673293293170",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:41:33.170Z"
+  },
+  {
+    "time": "1673293452246",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:44:12.246Z"
+  },
+  {
+    "time": "1673293454602",
+    "event": "mode",
+    "mode": "3",
+    "datetime": "2023-01-09T19:44:14.602Z"
+  },
+  {
+    "time": "1673293454640",
+    "event": "load",
+    "prod": "123",
+    "datetime": "2023-01-09T19:44:14.640Z"
+  },
+  {
+    "time": "1673293456388",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:44:16.388Z"
+  },
+  {
+    "time": "1673293461356",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:44:21.356Z"
+  },
+  {
+    "time": "1673293607050",
+    "event": "mode",
+    "mode": "2",
+    "datetime": "2023-01-09T19:46:47.050Z"
+  }
+]

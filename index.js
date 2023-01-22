@@ -15,17 +15,85 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 console.log("Started!")
 
-function isToday(date) {
-    const today = new Date();
-    // 👇️ Today's date
+var status = {
+    timer: 0,
+    counter: 0,
+    running: false,
+    runTime: 0,
+    configFileName: "",
+    programName: "",
+    programTime: 0,
+    numRequested: 0,
+    numCompleted: 0,
+    opState: 0,
+    /*
+        0: no info
+        1: confermare
+        2: rifiutata
+        3: in esecuzione
+        4: annullata
+        5: completata
+    */
+}
+
+setInterval(() => {
+    status.timer++
+}, 100)
+
+function isToday(date, current_day = undefined) {
+    var today = new Date()
+    if (current_day !== undefined)
+        today = new Date(current_day)
+    // Today's date
     //console.log(today);
     if (today.toDateString() === date.toDateString()) {
       return true;
     }
     return false;
-  }
+}
+//console.log(isToday(new Date(), "2023-01-09T10:34:39.246Z"))
+//console.log(isToday(new Date()))
 
-function process_sample_log(SystemEventLog) {
+// ************************************************************************************************
+// ************************************************************************************************
+// ************************************************************************************************
+
+function count_prod_start(SystemEventLog, prod_name, start_time = 0, current_day = undefined) {
+    //prod_name = "MENSOLA CALANDRA"
+
+    var data = JSON.parse("[" + SystemEventLog + "]")
+    data = data.filter(o => o.timems === undefined)
+    data.map(o => {
+        delete o.step
+        delete o.stock
+        delete o.path
+        var d = new Date(0)
+        d.setUTCMilliseconds(o.time)
+        o.datetime = d//.toLocaleString('it-IT');
+    }) 
+
+    // tengo solo le azioni fatte oggi
+    var data = data.filter(o => {
+        //console.log(o)
+        //return (isToday(o.datetime))
+        return (isToday(o.datetime, current_day))
+    })
+
+    //fs.writeFileSync('./test/log2.json', JSON.stringify(data, undefined, 2))
+    
+    var data1 = data.filter(o => {
+        return (o.event == 'start' && o.prod == prod_name && o.time >= start_time)
+    })    
+    //console.log(data1)
+    
+    return data1.length
+}
+//const demo_log2 = fs.readFileSync('./test/log2.txt')
+//var num = count_prod_start(demo_log2, "MENSOLA CALANDRA", 1673260701123, "2023-01-09T10:34:39.246Z")
+//console.log(num)
+//return
+
+function process_event_log(SystemEventLog) {
     
     const _DEBUG_ = false
 
@@ -106,37 +174,34 @@ function process_sample_log(SystemEventLog) {
         console.log("------------------------------------------")
     }
 
-    //console.log(data.filter(o => {
-    //    return o.time >= data_last_start.time
-    //}).slice(-100))
     return o
 
+    // console.log(data.filter(o => {
+    //     return o.time >= data_last_start.time
+    // }).slice(-100))
     
-    //var num = 0
-    //data_load.map(() => num++)
-    //data.sort((a, b) => {
-    //    return (a.mode < a.mode)
-    //})
+    // var num = 0
+    // data_load.map(() => num++)
+    // data.sort((a, b) => {
+    //     return (a.mode < a.mode)
+    // })
     // data_load.map(o => {
     //     //o.time2 = (o.time/1000).toFixed(0)
     //     var d = new Date(0)
     //     d.setUTCMilliseconds(o.time)
     //     o.datetime = d
     // })
-    //console.log("num", num)
-
-
-
+    // console.log("num", num)
 }
  
 //const demo_SystemEventLog = fs.readFileSync('./test/SystemEventLog.txt')
-//const demo_SystemEventLog = fs.readFileSync('./test/log2.txt')
-//process_sample_log(demo_SystemEventLog)
+const demo_SystemEventLog = fs.readFileSync('./test/log2.txt')
+//process_event_log(demo_SystemEventLog)
 
 // axios.get('http://192.168.144.100/~Logs/SystemEventLog.txt').then(resp => {
 //     //console.log(resp.data);
 //     try {
-//         var o = process_sample_log(resp.data)            
+//         var o = process_event_log(resp.data)            
 //         console.log(o)
 //     } catch (error) {
 //         console.log(error)
@@ -149,33 +214,23 @@ function process_sample_log(SystemEventLog) {
 //var oo = moment(1673544031107)
 //console.log(oo)
 
-var status = {
-    timer: 0,
-    counter: 123,
-    running: true,
-    runTime: 10,
-    configFileName: "xxx",
-    programName: "",
-    programTime: 0,
-    numRequested: 0,
-    numCompleted: 0,
-    opState: 0,
-}
-
-setInterval(() => {
-    status.timer++
-}, 100)
 
 setInterval(() => {
     axios.get('http://192.168.144.100/~Logs/SystemEventLog.txt').then(resp => {
         //console.log(resp.data);
         try {
-            var o = process_sample_log(resp.data)            
+            var o = process_event_log(resp.data)
             //console.log(o)
             status.counter = o.counter
             status.running = o.running
             status.runTime = o.runTime
             status.configFileName = o.configFileName
+            if (status.opState == 3) {
+                // in esecuzione
+                status.numCompleted = count_prod_start(resp.data, status.programName, status.programTime, undefined /* today */)
+            } else {
+                status.numCompleted = 0
+            }
             console.log(status)
         } catch (error) {
             console.log(error)
@@ -196,6 +251,11 @@ app.post('/program', function (req, res) {
     status.programTime = Date.now()
     status.programName = req.body.name
     status.numRequested = parseInt(req.body.num)
+    status.numCompleted = 0
+
+    //status.numCompleted = count_prod_start(demo_SystemEventLog, status.programName, 0, "2023-01-09T10:34:39.246Z")
+    //console.log(status)
+
     if (status.numRequested == 0 || status.programName == "") {
         status.opState = 0
     } else {
@@ -206,7 +266,6 @@ app.post('/program', function (req, res) {
     });
 })
 app.get('/op/state/:value', function (req, res) { 
-    //console.log(req.body)
     console.log(req.params)
     status.opState = parseInt(req.params.value)
     res.json({
